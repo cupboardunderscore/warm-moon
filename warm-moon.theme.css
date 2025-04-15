@@ -1,17 +1,10 @@
 /**
- * @name Gucio-oled
-*/
-
-/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
-
-
-
-/* Import base GUCIO theme */
-@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
-
-/* Import AMOLED-CORD theme */
-@import url('https://luckfire.github.io/amoled-cord/src/amoled-cord.css');
-
+ * @name warm-moon
+ * @version 1.0
+ * @author cupboard_
+ *
+ * @source https://github.com/cupboardunderscore/warm-moon
+ */
 
 /* MODIFICATIONS */
 
@@ -26,22 +19,22 @@ button[aria-label="Send a gift"] {
 	display: none;
 }
 
-/* Hide GIF picker button */
+/* Hide GIF picker button
 button[aria-label="Open GIF picker"] {
 	display: none;
-}
+}*/
 
-/* Hide sticker picker button */
+/* Hide sticker picker button
 button[aria-label="Open sticker picker"] {
 	display: none;
 }
-
-/* Hide app launcher */
+*/
+/* Hide app launcher
 [class*=channelAppLauncher_] {
 	display: none !important;
-}
+}*/
 
-/* Hide forward button (only on hover) */
+/* Hide forward button (only on hover)
 #message-actions-forward {
 	display: none;
 }
@@ -49,18 +42,18 @@ button[aria-label="Open sticker picker"] {
 div[aria-label="Forward"] {
 	display: none;
 }
-
-/* Hide "Find or start conversation" button in home */
+*/
+/* Hide "Find or start conversation" button in home
 .searchBar_f0963d {
 	display: none;
 }
-
+*/
 /* Allow the server tooltip to fit the entire server name in one line */
 [class^=tooltip] {
 	max-width: unset !important;
 }
 
-/* Hide chat box if you have no permissions to write in the channel */
+/* Hide chat box if you have no permissions to write in the channel
 [class*=channelTextAreaDisabled] {
 	display: none !important;
 }
@@ -72,12 +65,12 @@ div[aria-label="Forward"] {
 	width: 0px !important;
 	z-index: 0 !important;
 }
-
-/* Fix discord being shit with profiles */
+*/
+/* Fix discord being shit with profiles
 [class*=userPopoutOverlayBackground] {
 	max-height: 60vh;
 }
-
+*/
 /* I love performance */
 
 * {
@@ -107,7 +100,7 @@ div[aria-label="Forward"] {
 /* customize things here */
 body {
 	/* Use default Discord font instead of custom font */
-	--font: '';
+	/*--font: '';*/
 
 	/* sizes */
 	--gap: 5px;
@@ -116,11 +109,11 @@ body {
 	/* thickness of unread messages divider and highlighted message borders */
 
 	/* animation/transition options */
-	--animations: off;
+	/*--animations: off;*/
 	/* turn off to disable all midnight animations/transitions */
-	--list-item-transition: 0.2s ease;
+	/*--list-item-transition: 0.2s ease;*/
 	/* transition for list items */
-	--dms-icon-svg-transition: 0.4s ease;
+	/*--dms-icon-svg-transition: 0.4s ease;*/
 	/* transition for the dms icon */
 
 	/* top bar options */
@@ -136,19 +129,19 @@ body {
 	/* size of custom window controls */
 
 	/* dms button background options */
-	--dms-background: off;
+	/*--dms-background: off;*/
 	/* off to disable, image to use a background image, color to use a custom color/gradient */
-	--dms-background-image-url: url('');
+	/*--dms-background-image-url: url('');*/
 	/* url of the background image */
-	--dms-background-image-size: cover;
+	/*--dms-background-image-size: cover;*/
 	/* size of the background image (css background-size) */
-	--dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));
+	/*--dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2));*/
 	/* fixed color/gradient (css background) */
 
 	/* background image options */
-	--background-image: off;
+	/*--background-image: off;*/
 	/* turn on to use a background image */
-	--background-image-url: url('');
+	/*--background-image-url: url('');*/
 	/* url of the background image */
 	/* you can set this to a more opaque color if floating panels look too transparent */
 
@@ -164,144 +157,31 @@ body {
 	--chatbar-padding: 2px;
 	/* padding of the chatbar */
 }
-
-/* Modified color scheme for better readability and contrast */
-:root {
-	--colors: on;
-	/* turn off to use discord default colors */
-
-	/* text colors - improved for readability */
-	--text-0: #ffffff;
-	/* text on colored elements */
-	--text-1: #f0f0f0;
-	/* other normally white text - brightened for better contrast */
-	--text-2: #d9d9d9;
-	/* headings and important text - brightened from #aaa */
-	--text-3: #b8b8b8;
-	/* normal text - brightened from #888 */
-	--text-4: #a0a0a0;
-	/* icon buttons and channels - brightened from #666 */
-	--text-5: #777777;
-	/* muted channels/chats and timestamps - brightened from #444 */
-
-	/* OLED background colors - modified for better contrast */
-	--bg-1: #0a0a0a;
-	/* dark buttons when clicked - slightly lighter than pure black */
-	--bg-2: #101010;
-	/* dark buttons - slightly lighter for better contrast */
-	--bg-3: #141414;
-	/* spacing, secondary elements */
-	--bg-4: #080808;
-	/* main background color - near black but not pure black */
-	--hover: rgba(255, 255, 255, 0.07);
-	/* channels and buttons when hovered - slightly more visible */
-	--active: rgba(255, 255, 255, 0.12);
-	/* channels and buttons when clicked or selected - increased visibility */
-	--active-2: rgba(255, 255, 255, 0.15);
-	/* extra state for transparent buttons - increased visibility */
-	--message-hover: rgba(255, 255, 255, 0.05);
-	/* messages when hovered - slightly more visible */
-
-	/* accent colors - brightened for better visibility */
-	--accent-1: #5ba1f3;
-	/* links and other accent text - brightened blue */
-	--accent-2: #0c7c85;
-	/* small accent elements - brightened teal */
-	--accent-3: #3580de;
-	/* accent buttons - brightened blue */
-	--accent-4: #2066cc;
-	/* accent buttons when hovered - brightened */
-	--accent-5: #1855b9;
-	/* accent buttons when clicked - brightened */
-	--accent-new: var(--accent-2);
-	/* stuff that's normally red like mute/deafen buttons */
-	--mention: rgba(91, 161, 243, 0.15);
-	/* background of messages that mention you - increased visibility */
-	--mention-hover: rgba(91, 161, 243, 0.22);
-	/* background of messages that mention you when hovered - increased visibility */
-	--reply: rgba(255, 255, 255, 0.08);
-	/* background of messages that reply to you - increased visibility */
-	--reply-hover: rgba(255, 255, 255, 0.12);
-	/* background of messages that reply to you when hovered - increased visibility */
-
-	/* status indicator colors - brightened for better visibility */
-	--online: #4bd68e;
-	/* brightened green */
-	--dnd: #ff5353;
-	/* brightened red */
-	--idle: #ffb626;
-	/* brightened yellow */
-	--streaming: #7446b9;
-	/* brightened purple */
-	--offline: #8f9aa8;
-	/* brightened grey */
-
-	/* border colors - increased visibility */
-	--border-light: rgba(255, 255, 255, 0.08);
-	/* light border color - more visible */
-	--border: rgba(255, 255, 255, 0.03);
-	/* normal border color - slightly visible instead of transparent */
-	--button-border: rgba(255, 255, 255, 0.15);
-	/* neutral border color of buttons - more visible */
-
-	/* base colors - brightened */
-	--red-1: #ff4d55;
-	--red-2: #e84147;
-	--red-3: #d83a42;
-	--red-4: #c03339;
-	--red-5: #a82c31;
-
-	--green-1: #4ed07b;
-	--green-2: #43b96e;
-	--green-3: #3aa161;
-	--green-4: #318a54;
-	--green-5: #297247;
-
-	--blue-1: #5ba1f3;
-	--blue-2: #4a90e2;
-	--blue-3: #3980d2;
-	--blue-4: #2871c1;
-	--blue-5: #1761b0;
-
-	--yellow-1: #ffcd44;
-	--yellow-2: #ffc029;
-	--yellow-3: #eeb017;
-	--yellow-4: #dda00a;
-	--yellow-5: #cc9000;
-
-	--purple-1: #b67fff;
-	--purple-2: #a26beb;
-	--purple-3: #8f58d7;
-	--purple-4: #7c46c3;
-	--purple-5: #6934af;
-}
-
-/* Additional OLED specific overrides - slightly less dark for better contrast */
-.theme-dark {
-	--background-primary: #080808 !important;
-	--background-secondary: #101010 !important;
-	--background-secondary-alt: #141414 !important;
-	--background-tertiary: #0a0a0a !important;
-	--background-accent: #101010 !important;
-	--background-floating: #0c0c0c !important;
-	--background-nested-floating: #0c0c0c !important;
-	--background-mobile-primary: #080808 !important;
-	--background-mobile-secondary: #101010 !important;
-	--deprecated-card-bg: #0c0c0c !important;
-	--deprecated-card-editable-bg: #101010 !important;
-	--deprecated-store-bg: #080808 !important;
-	--deprecated-quickswitcher-input-background: #101010 !important;
-	--deprecated-quickswitcher-input-placeholder: #101010 !important;
-	--deprecated-text-input-bg: #101010 !important;
-	--deprecated-text-input-border: #1c1c1c !important;
-	--deprecated-text-input-border-hover: #222222 !important;
-	--activity-card-background: #0c0c0c !important;
-}
-
 /* Unfuck the new discord ui */
 
 /* custom guild icon size */
 .visual-refresh {
+    .container_c8ffbb /* member list */
+    {
+        margin-left: var(--gap);
+        overflow: hidden;
+        height: auto;
+        min-width: var(--custom-member-list-width);
+    }
+	.guilds_c48ade /* server list */
+	{
+        margin-bottom: 0;
+    }
+	.panels_c48ade /* user panel */
+	{
+        /*width: 100%;
+        position: static;
+        grid-area: userPanel;
+        margin: 12px 0 0 0;
+        overflow: hidden;*/
+        max-width: 226px;
+        margin: 0 76px;
+    }
 	--size: 48;
 	/* visual refresh is 40, old discord is 48. */
 	--guildbar-avatar-size: calc(var(--size) * 1px);
@@ -409,7 +289,7 @@ body {
 
 /* Fuck your titlebar */
 .visual-refresh {
-	--custom-app-top-bar-height: 36px;
+	--custom-app-top-bar-height: 32px;
 }
 
 div[data-windows=false] div {
@@ -491,321 +371,4 @@ padding: 0px !important;
 }
 svg.spotify-button-icon.vc-spotify-repeat {
     color: #3350e1 !important;
-}
-
-/* === IMPROVED DISCORD UI TWEAKS === */
-
-/* Square off rounded corners slightly */
-:root {
-    --radius-sm: 3px;
-    --radius-md: 4px;
-    --radius-lg: 5px;
-}
-
-/* Improved message spacing for better readability */
-.messageListItem__050f9,
-.message__80c10,
-.messageContent_abea64 {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    border-radius: 3px !important;
-}
-
-/* Improve text readability with better spacing and contrast */
-.markup_75297 {
-    padding: 3px 0 !important;
-    line-height: 1.4 !important;
-    color: var(--text-1) !important;
-}
-
-/* Better spacing around user popouts for clarity */
-.userPopoutOuter_d739b2,
-.message__80c10 {
-    margin: 3px 0 !important;
-}
-
-/* Improved input box area with better visibility */
-.channelTextArea__648e5 {
-    padding: 6px 10px !important;
-    border-radius: 5px !important;
-    background-color: var(--bg-2) !important;
-    border: 1px solid var(--border-light) !important;
-}
-
-/* Better spacing in sidebars */
-.container__7e23c,
-.members__573eb,
-.sidebar__9e23e {
-    padding: 5px !important;
-}
-
-/* Improve member list items visibility */
-.member_aa4760 {
-    margin: 2px 0 !important;
-    padding: 3px !important;
-    border-radius: 3px !important;
-    background-color: transparent !important;
-}
-
-.member_aa4760:hover {
-    background-color: var(--hover) !important;
-}
-
-/* Better hover effects for buttons */
-.button__581d0:hover,
-.button__56b64:hover {
-    background-color: var(--hover) !important;
-}
-
-/* Improved modal and popup contrast */
-.layer__2efcb,
-.layerContainer__29b9d {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-}
-
-.modal__71df9,
-.root_a28985,
-.footer__73bbd,
-.thin_b1c063 {
-    background-color: #101010 !important;
-    border: 1px solid var(--border-light) !important;
-}
-
-/* More visible scrollbars */
-::-webkit-scrollbar {
-    width: 8px !important;
-    height: 8px !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.2) !important;
-    border-radius: 4px !important;
-}
-
-::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-/* Improve text input fields for better visibility */
-input, textarea {
-    background-color: #141414 !important;
-    border: 1px solid var(--border-light) !important;
-    color: var(--text-1) !important;
-}
-
-/* Improve channel list visibility */
-.containerDefault__1673e .name_c06db2 {
-    color: var(--text-3) !important;
-}
-
-.containerDefault__1673e:hover .name_c06db2 {
-    color: var(--text-1) !important;
-}
-
-/* Fix betterfolders */
-.visual-refresh {
-    .vc-betterFolders-sidebar-grid {
-        grid-template-columns: [start] min-content [guildsEnd] min-content [sidebarEnd] min-content [channelsEnd] 1fr [end];
-
-        .sidebarList_c48ade {
-            width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - var(--gap));
-        }
-
-        .sidebar_c48ade:not(:has(:nth-child(2) > [aria-label='Servers sidebar'])) {
-            column-gap: 0;
-        }
-
-        .panels_c48ade {
-            max-width: calc(var(--custom-guild-sidebar-width) + 2 * var(--gap) + 4px + 66px);
-        }
-    }
-}
-
-@container body style(--small-user-panel: on) {
-    .visual-refresh {
-        .vc-betterFolders-sidebar-grid {
-            grid-template-areas:
-                'titleBar titleBar titleBar titleBar'
-                'guildsList betterFoldersSidebar notice notice'
-                'guildsList betterFoldersSidebar channelsList page'
-                'guildsList betterFoldersSidebar userPanel page';
-        }
-    }
-}
-
-@container body style(--small-user-panel: on) {
-    .visual-refresh {
-        .vc-betterFolders-sidebar-grid {
-            grid-template-areas:
-                'titleBar titleBar titleBar titleBar'
-                'guildsList betterFoldersSidebar notice notice'
-                'guildsList betterFoldersSidebar channelsList page'
-                'userPanel userPanel userPanel page';
-        }
-    }
-}
-
-/* Improve channel and server name readability */
-.name__48dcf {
-    color: var(--text-2) !important;
-    font-weight: 500 !important;
-}
-
-/* Better contrast for code blocks */
-.markup_75297 code {
-    background-color: #141414 !important;
-    border: 1px solid var(--border-light) !important;
-    color: var(--text-1) !important;
-}
-
-/* Improve mention visibility */
-.wrapper__8e0fc {
-    background-color: rgba(91, 161, 243, 0.15) !important;
-    color: var(--text-0) !important;
-}
-
-/* Ensure embed content is visible */
-.embedDescription__33443,
-.embedTitle_f74d15,
-.embedFields__33443 {
-    color: var(--text-2) !important;
-}
-
-/* Improve visibility of selected channels */
-.modeSelected__6ca32 {
-    background-color: var(--active) !important;
-}
-
-.modeSelected__6ca32 .name_c06db2 {
-    color: var(--text-0) !important;
-}
-
-/* Ukrycie/wtopienie pasków przewijania w tło */
-::-webkit-scrollbar {
-    width: 4px !important; /* możesz zmniejszyć szerokość */
-    background-color: transparent !important; /* przezroczyste tło */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2) !important; /* prawie niewidoczny suwak */
-    border-radius: 0 !important; /* usunięcie zaokrąglenia */
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent !important; /* przezroczyste tło toru przewijania */
-    border: none !important;
-    margin: 0 !important;
-}
-
-/* Ukrycie przycisków przewijania (strzałki) */
-::-webkit-scrollbar-button {
-    display: none !important;
-}
-
-/* Dodatkowe ustawienie dla ukrycia obramowania i cieni suwaków */
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-thumb:active,
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-/* Specjalnie dla listy serwerów */
-.guilds_c48ade::-webkit-scrollbar,
-.guilds-2JjMmN::-webkit-scrollbar,
-[class*="guilds-"]::-webkit-scrollbar {
-    display: none !important; /* całkowite ukrycie paska dla listy serwerów */
-}
-
-/* Powiększenie folderów i poprawienie wycentrowania przycisków */
-
-/* Powiększenie folderów i ich obramowania */
-.folderIconWrapper__48112 {
-    width: 56px !important;
-    height: 56px !important;
-    padding: 0 !important;
-}
-
-.folderIcon__48112 {
-    width: 64px !important;
-    height: 58px !important;
-    padding: 0 !important;
-}
-
-.folder__48112 {
-    width: 52px !important;
-    height: 56px !important;
-    border-radius: 16px !important;
-}
-
-/* Poprawienie kształtu i rozmiaru ikon folderów */
-.expandedFolderIconWrapper__48112,
-.closedFolderIconWrapper__48112 {
-    width: 52px !important;
-    height: 18px !important;
-}
-
-/* Ukrycie/wtopienie pasków przewijania w tło */
-::-webkit-scrollbar {
-    width: 4px !important;
-    background-color: transparent !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border-radius: 0 !important;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent !important;
-    border: none !important;
-    margin: 0 !important;
-}
-
-::-webkit-scrollbar-button {
-    display: none !important;
-}
-
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-thumb:active,
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.guilds_c48ade::-webkit-scrollbar,
-.guilds-2JjMmN::-webkit-scrollbar,
-[class*="guilds-"]::-webkit-scrollbar {
-    display: none !important;
-}
-
-.circleIconButton__5bc7e {
-    width: auto;
-    height: 42px;
-}
-
-.expandedFolderBackground__48112 {
-    width: 54px;
-    height: 52px;
-}
-
-.folderIcon__48112
-.folderIconWrapper__48112,
-.folder__48112,
-.expandedFolderIconWrapper__48112 {
-    width: 54px;
-    height: 52px;
-}
-
-:root {
-  --title-bar-override: 1;
-  --prevent-theme-titlebar: 1;
-}
-
-.panels__5aa6c {
-  min-height: 47px !important;
-  max-height: 47px !important;
-  height: 47px !important;
 }
