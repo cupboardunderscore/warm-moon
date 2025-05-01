@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.0
+ * @version 1.1
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -190,7 +190,8 @@ body {
 	--size: 48;
 	/* visual refresh is 40, old discord is 48. */
 	--guildbar-avatar-size: calc(var(--size) * 1px);
-	--guildbar-folder-size: var(--g-48);
+	/*--guildbar-folder-size: var(--g-48);*/
+	--guildbar-folder-size: 48px;
 	--g-48: calc(var(--guildbar-avatar-size) + 8px);
 	--g-19-r: calc((var(--size) / 2 - 1) / var(--size) * 40px);
 	--g-40-r: calc(var(--guildbar-avatar-size) / (var(--size) + 8) * 48);
@@ -199,19 +200,19 @@ body {
 	--g-4-r: calc((var(--g-48-r) - var(--guildbar-avatar-size)) / -2);
 	--g-4-r-2: calc((var(--g-56-r) - var(--g-48)) / -2);
 
-	.folderIcon__48112>.wrapper_cc5dd2 {
+	.wrapper_cc5dd2 {
 		width: 48px !important;
 		height: 48px !important;
 	}
 
-	.folderIcon__48112>.wrapper_cc5dd2>.svg_cc5dd2 {
+	/*.svg_cc5dd2 {
 		width: var(--g-56-r);
 		height: var(--g-56-r);
 		top: var(--g-4-r-2);
 		left: var(--g-4-r-2);
-	}
+	}*/
 
-	.folderIcon__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject {
+	.svg_cc5dd2>foreignObject {
 		width: calc();
 	}
 
@@ -229,10 +230,18 @@ body {
 		height: 40px;
 	}
 
+	/*.folderGroup__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
+	{
+		width: 48px;
+		height: 56px;
+		top: 10px;
+		left: 10px;
+	}*/
+
 	.folder__48112,
 	.folderIconWrapper__48112 {
-		width: 41px;
-		height: 41px;
+		width: 48px;
+		height: 48px;
 	}
 
 	.expandedFolderIconWrapper__48112 {
@@ -266,12 +275,19 @@ body {
 		width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
 		padding: calc(var(--custom-guild-list-padding) / 2);
 	}
-}
+	
+	.icon_f34534,
+	.folderPreviewGuildIcon__48112,
+	.iconSizeMini_f34534,
+	.iconInactive_f34534
+	{
+		border-radius: 50%;
+	}
 
-/* Make server icons round again */
-[class*="closedFolderIconWrapper_"]>[class*="guildIcon_"],
-[data-list-item-id*="guildsnav_"]>[class*="icon_"] {
-	border-radius: 50% !important;
+	.folderPreviewWrapper__48112
+	{
+		border-radius: 50%;
+	}
 }
 
 /* Make member list more compressed */
