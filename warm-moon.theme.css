@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.1
+ * @version 1.2
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -191,7 +191,7 @@ body {
 	/* visual refresh is 40, old discord is 48. */
 	--guildbar-avatar-size: calc(var(--size) * 1px);
 	/*--guildbar-folder-size: var(--g-48);*/
-	--guildbar-folder-size: 48px;
+	--guildbar-folder-size: 40px;
 	--g-48: calc(var(--guildbar-avatar-size) + 8px);
 	--g-19-r: calc((var(--size) / 2 - 1) / var(--size) * 40px);
 	--g-40-r: calc(var(--guildbar-avatar-size) / (var(--size) + 8) * 48);
@@ -219,8 +219,10 @@ body {
 	.svg_cc5dd2 {
 		width: var(--g-50-r);
 		height: var(--g-48-r);
-		top: var(--g-4-r);
-		left: var(--g-4-r);
+		//top: var(--g-4-r);
+		//left: var(--g-4-r);
+		margin-left: auto;
+    	margin-right: auto;
 	}
 
 	.wrapper__6e9f8,
@@ -230,18 +232,38 @@ body {
 		height: 40px;
 	}
 
-	/*.folderGroup__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
+	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
 	{
-		width: 48px;
+		width: 56px;
 		height: 56px;
-		top: 10px;
-		left: 10px;
-	}*/
+		top: 1px;
+		left: -5px;
+	}
+
+	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.folderButtonContent__48112>.folderPreviewWrapper__48112,
+	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.folderButtonContent__48112>.folderPreviewWrapper__48112>.folderPreview__48112
+	{
+		width: 0;
+		height: 0;
+	}
+
+	.folderHeader__48112,
+	.folderButton__48112
+	{
+		width: 47px;
+		height: 47px;
+	}
 
 	.folder__48112,
 	.folderIconWrapper__48112 {
-		width: 48px;
-		height: 48px;
+		width: 40px;
+		height: 40px;
+	}
+
+	.folderGroupBackground__48112
+	{
+		width: 56px;
+		left: 12px;
 	}
 
 	.expandedFolderIconWrapper__48112 {
