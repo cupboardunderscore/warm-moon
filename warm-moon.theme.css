@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.2
+ * @version 1.2.1
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -119,7 +119,7 @@ body {
 	/* top bar options */
 	--move-top-bar-buttons: off;
 	/* turn on to move inbox button to the server list (recommend setting top bar height to 24px) */
-	--custom-app-top-bar-height: 36px;
+	//--custom-app-top-bar-height: 36px;
 	/* height of the titlebar/top bar (default is 36px)*/
 
 	/* window controls */
@@ -187,6 +187,11 @@ body {
         width: 40px;
 		height: 40px;
     }
+	.upperBadge_cc5dd2
+	{
+		top: 3px;
+		left: 31px;
+	}
 	--size: 48;
 	/* visual refresh is 40, old discord is 48. */
 	--guildbar-avatar-size: calc(var(--size) * 1px);
