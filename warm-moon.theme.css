@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.2.1
+ * @version 1.2.2
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -191,6 +191,10 @@ body {
 	{
 		top: 3px;
 		left: 31px;
+	}
+	#guild-list-unread-dms
+	{
+		--space-xs: 16px;
 	}
 	--size: 48;
 	/* visual refresh is 40, old discord is 48. */
