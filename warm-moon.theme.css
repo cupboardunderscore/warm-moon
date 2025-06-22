@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.3
+ * @version 1.3.1
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -323,6 +323,13 @@ body {
 	.folderPreviewWrapper__48112
 	{
 		border-radius: 50%;
+	}
+	
+	.container__01ae2,
+	.callContainer_cb9592,
+	.sidebarListRounded_c48ade
+	{
+		border-radius: 0%;
 	}
 }
 
