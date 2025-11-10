@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.4
+ * @version 1.4.1
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -214,6 +214,19 @@ body {
 	.container__2637a
 	{
 		padding-bottom: calc(var(--custom-app-panels-height, 0) + 12px);
+	}
+	.buttonChevronIcon__37e49
+	{
+		width: 0px;
+		height: 0px;
+	}
+	.button__67645.buttonChevron__37e49
+	{
+		width: 0px;
+	}
+	.button__67645.micButtonWithMenu__37e49
+	{
+    	border-radius: var(--button-radius) var(--button-radius) var(--button-radius) var(--button-radius);
 	}
 	--size: 48;
 	/* visual refresh is 40, old discord is 48. */
