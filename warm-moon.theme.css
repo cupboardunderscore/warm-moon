@@ -1,6 +1,6 @@
 /**
  * @name warm-moon
- * @version 1.5.1
+ * @version 1.6.0
  * @author cupboard_
  *
  * @source https://github.com/cupboardunderscore/warm-moon
@@ -40,20 +40,9 @@
 
 /* custom guild icon size */
 .visual-refresh {
-    .container_c8ffbb /* member list */
-    {
-        margin-left: var(--gap);
-        overflow: hidden;
-        height: auto;
-    }
-	.wrapper_ef3116 /* server list */
+	.wrapper_5dqHTG /* server list */
 	{
         margin-bottom: 0;
-    }
-    .circleIconButton__5bc7e /* new server button */
-    {
-        width: 40px;
-		height: 40px;
     }
 	.upperBadge_cc5dd2
 	{
@@ -65,442 +54,77 @@
 		top: 30px;
 		left: 30px;
 	}
-	.panels__5e434
+	.panels_pog62O
 	{
 		width: calc(100% - 97px);
     	left: calc(var(--space-12) + 76px);
 	}
-	.buttonChevronIcon__37e49,
-	.button__67645.buttonChevron__37e49
+	.buttonChevronIcon_gKpIZP,
+	.buttonChevron_gKpIZP
 	{
 		width: 0px;
 		height: 0px;
 	}
-	.button__67645.micButtonWithMenu__37e49
+	.button_Y-8oZW
 	{
     	border-radius: var(--button-radius) var(--button-radius) var(--button-radius) var(--button-radius);
 	}
-	.backForwardButtons__63abb,
-	.title_edbb22
+	.backForwardButtons_nS9Yqn,
+	.title_3zSH5d
 	{
 		display: none;
 	}
-	--size: 48;
-	/* visual refresh is 40, old discord is 48. */
-	--guildbar-avatar-size: calc(var(--size) * 1px);
-	/*--guildbar-folder-size: var(--g-48);*/
-	--guildbar-folder-size: 40px;
-	--g-48: calc(var(--guildbar-avatar-size) + 8px);
-	--g-19-r: calc((var(--size) / 2 - 1) / var(--size) * 40px);
-	--g-40-r: calc(var(--guildbar-avatar-size) / (var(--size) + 8) * 48);
-	--g-48-r: calc(var(--guildbar-avatar-size) * 48 / 40);
-	--g-56-r: calc(var(--g-48) * 56 / 48);
-	--g-4-r: calc((var(--g-48-r) - var(--guildbar-avatar-size)) / -2);
-	--g-4-r-2: calc((var(--g-56-r) - var(--g-48)) / -2);
-
-	.wrapper_cc5dd2
+	.wrapper_hqZPsU,
+	.wrapper_JJ-hgR,
+	.childWrapper_JJ-hgR,
+	.icon_JJ-hgR,
+	.circleIconButton_g8YUxD
 	{
 		width: 48px !important;
 		height: 48px !important;
 	}
-	
-	.svg_cc5dd2 {/*??*/
-		width: var(--g-50-r);
-		height: var(--g-48-r);
-		top: -5px;
-		left: -5px;
-		margin-left: auto;
-    	margin-right: auto;
-	}
-
-	.wrapper__6e9f8,
-	.icon__6e9f8
+	.wrapper_hqZPsU>.svg_hqZPsU
 	{
-		width: calc((1000 / 1439) * 48px);
-		height: calc((1000 / 1439) * 48px);
+		inset: auto;
+		contain: none;
 	}
-
-	foreignObject>.wrapper__6e9f8,
-	foreignObject>.wrapper__6e9f8>.icon__6e9f8
+	.wrapper_hqZPsU>.svg_hqZPsU foreignObject
 	{
-		width: 40px;
-		height: 40px;
+		mask: none;
+		overflow: visible;
+		x: -4;
+		y: -4;
 	}
-
-	#guild-list-unread-dms.stack_dbd263
+	.wrapper_hqZPsU>.svg_hqZPsU foreignObject[width="48"]
 	{
-		gap: calc((var(--space-xs)) + 8px) !important;
+		x: 0;
+		y: 0;
 	}
-
-	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
+	.childWrapper_JJ-hgR>svg,
+	.folderIcon_RTMSuZ>svg,
+	.acronym_JJ-hgR,
+	.circleIcon_g8YUxD
 	{
+		transform: scale(1.2);
+	}
+	.folderPreviewGuildIcon_RTMSuZ
+	{
+		border-radius: 100%;
+	}
+	.folderGroupBackground_RTMSuZ
+	{
+		left: 8px;
 		width: 56px;
-		height: 56px;
-		top: 0px;
+	}
+	.isExpanded_RTMSuZ>.listItem_rwEpIL>.folderHeader_RTMSuZ>.folderButton_RTMSuZ>.wrapper_hqZPsU>svg>foreignObject>.folderButtonInner_RTMSuZ>.folderButtonContent_RTMSuZ>.folderIconWrapper_RTMSuZ>.folderIcon_RTMSuZ
+	{
+		position: relative;
 		left: -4px;
+		width: 48px;
+		height: 48px;
 	}
-
-	.folderGroup__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
+	.stack_TWWX0S
 	{
-		top: 0px;
-		left: -1px;
-	}
-
-	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.folderButtonInner__48112>.folderButtonContent__48112>.folderPreviewWrapper__48112,
-	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.folderButtonInner__48112>.folderButtonContent__48112>.folderPreviewWrapper__48112>.folderPreview__48112
-	{
-		display: none;
-	}
-
-	.folderHeader__48112,
-	.folderButton__48112
-	{
-		width: 47px;
-		height: 47px;
-	}
-
-	.folder__48112,
-	.folderIconWrapper__48112
-	{
-		width: 40px;
-		height: 40px;
-	}
-
-	.folderGroupBackground__48112
-	{
-		width: 56px;
-		left: 13px;
-	}
-
-	.folderButtonInner__48112
-	{
-		width: 56px;
-		height: 56px;
-	}
-
-	.expandedFolderIconWrapper__48112 {
-		width: var(--g-40-r);
-		height: var(--g-40-r);
-		margin: 0;
-	}
-
-	.closedFolderIconWrapper__48112 {
-		width: var(--g-40-r);
-		height: var(--g-40-r);
-	}
-
-	.guildIcon__48112 {
-		width: var(--g-19-r);
-		height: var(--g-19-r);
-	}
-
-	.stack_dbd263 {
 		height: auto !important;
-		padding-bottom: 4px !important;
 	}
-
-	.tutorialContainer__1f388 .numberBadge__2b1f5 {
-		outline: 2px solid var(--bg-base-tertiary);
-		border-radius: 50%;
-	}
-
-	.unreadMentionsIndicatorBottom_ef3116,
-	.unreadMentionsIndicatorTop_ef3116 {
-		width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
-		padding: calc(var(--custom-guild-list-padding) / 2);
-	}
-	
-	.icon_f34534,
-	.folderPreviewGuildIcon__48112,
-	.iconSizeMini_f34534,
-	.iconInactive_f34534
-	{
-		border-radius: 50%;
-	}
-
-	.folderPreviewWrapper__48112
-	{
-		border-radius: 50%;
-	}
-	
-	.container__01ae2,
-	.callContainer_cb9592,
-	.sidebarListRounded_c48ade
-	{
-		border-radius: 0%;
-	}
-}
-
-div[data-align=stretch].stack_dbd263
-{
-	padding-top: 10px;
-}
-
-.container_c8ffbb {
-padding: 0px !important;
-}
-
-/* Fixed this to preserve text visibility */
-.markup_75297 {
-	padding: 2px 0px !important;
-	height: auto !important;
-}
-
-.subtitleContainer_f75fb0
-{
-    height: 40px ;
-}
-
-.tutorialContainer__1f388
-{
-    margin-bottom: 4px;
-}
-/* Allow the server tooltip to fit the entire server name in one line */
-[class^=tooltip] {
-	max-width: unset !important;
-}
-
-/* I love performance */
-* {
-	will-change: scroll-position;
-}
-
-.members_c8ffbb,
-/* members list */
-.guilds_c48ade,
-/* server list */
-.chatContent_f75fb0,
-/* main chat messages container */
-.sidebarList_c48ade,
-/* channels sidebar with animated banner */
-.layerContainer_da8173,
-/* app sibling container for overlay elements */
-.app__160d8 {
-	/* app container */
-	contain: strict !important;
-}
-
-.typingDots_b88801,
-.vc-typing-indicator-dots {
-	contain: paint !important;
-}
-
-/* Unfuck the new discord ui */
-
-/* custom guild icon size */
-.visual-refresh {
-    .container_c8ffbb /* member list */
-    {
-        margin-left: var(--gap);
-        overflow: hidden;
-        height: auto;
-    }
-	.wrapper_ef3116 /* server list */
-	{
-        margin-bottom: 0;
-    }
-    .circleIconButton__5bc7e /* new server button */
-    {
-        width: 40px;
-		height: 40px;
-    }
-	.upperBadge_cc5dd2
-	{
-		top: 2px;
-		left: 30px;
-	}
-	.lowerBadge_cc5dd2
-	{
-		top: 30px;
-		left: 30px;
-	}
-	.panels__5e434
-	{
-		width: calc(100% - 97px);
-    	left: calc(var(--space-12) + 76px);
-	}
-	.buttonChevronIcon__37e49,
-	.button__67645.buttonChevron__37e49
-	{
-		width: 0px;
-		height: 0px;
-	}
-	.button__67645.micButtonWithMenu__37e49
-	{
-    	border-radius: var(--button-radius) var(--button-radius) var(--button-radius) var(--button-radius);
-	}
-	.backForwardButtons__63abb,
-	.title_edbb22
-	{
-		display: none;
-	}
-	--size: 48;
-	/* visual refresh is 40, old discord is 48. */
-	--guildbar-avatar-size: calc(var(--size) * 1px);
-	/*--guildbar-folder-size: var(--g-48);*/
-	--guildbar-folder-size: 40px;
-	--g-48: calc(var(--guildbar-avatar-size) + 8px);
-	--g-19-r: calc((var(--size) / 2 - 1) / var(--size) * 40px);
-	--g-40-r: calc(var(--guildbar-avatar-size) / (var(--size) + 8) * 48);
-	--g-48-r: calc(var(--guildbar-avatar-size) * 48 / 40);
-	--g-56-r: calc(var(--g-48) * 56 / 48);
-	--g-4-r: calc((var(--g-48-r) - var(--guildbar-avatar-size)) / -2);
-	--g-4-r-2: calc((var(--g-56-r) - var(--g-48)) / -2);
-
-	.wrapper_cc5dd2
-	{
-		width: 48px !important;
-		height: 48px !important;
-	}
-	
-	.svg_cc5dd2 {/*??*/
-		width: var(--g-50-r);
-		height: var(--g-48-r);
-		top: -5px;
-		left: -5px;
-		margin-left: auto;
-    	margin-right: auto;
-	}
-
-	.wrapper__6e9f8,
-	.icon__6e9f8
-	{
-		width: calc((1000 / 1439) * 48px);
-		height: calc((1000 / 1439) * 48px);
-	}
-
-	foreignObject>.wrapper__6e9f8,
-	foreignObject>.wrapper__6e9f8>.icon__6e9f8
-	{
-		width: 40px;
-		height: 40px;
-	}
-
-	#guild-list-unread-dms.stack_dbd263
-	{
-		gap: calc((var(--space-xs)) + 8px) !important;
-	}
-
-	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
-	{
-		width: 56px;
-		height: 56px;
-		top: 0px;
-		left: -4px;
-	}
-
-	.folderGroup__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2
-	{
-		top: 0px;
-		left: -1px;
-	}
-
-	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.folderButtonInner__48112>.folderButtonContent__48112>.folderPreviewWrapper__48112,
-	.isExpanded__48112>.listItem__650eb>.folderHeader__48112>.folderButton__48112>.wrapper_cc5dd2>.svg_cc5dd2>foreignObject>.folderButtonInner__48112>.folderButtonContent__48112>.folderPreviewWrapper__48112>.folderPreview__48112
-	{
-		display: none;
-	}
-
-	.folderHeader__48112,
-	.folderButton__48112
-	{
-		width: 47px;
-		height: 47px;
-	}
-
-	.folder__48112,
-	.folderIconWrapper__48112
-	{
-		width: 40px;
-		height: 40px;
-	}
-
-	.folderGroupBackground__48112
-	{
-		width: 56px;
-		left: 13px;
-	}
-
-	.folderButtonInner__48112
-	{
-		width: 56px;
-		height: 56px;
-	}
-
-	.expandedFolderIconWrapper__48112 {
-		width: var(--g-40-r);
-		height: var(--g-40-r);
-		margin: 0;
-	}
-
-	.closedFolderIconWrapper__48112 {
-		width: var(--g-40-r);
-		height: var(--g-40-r);
-	}
-
-	.guildIcon__48112 {
-		width: var(--g-19-r);
-		height: var(--g-19-r);
-	}
-
-	.stack_dbd263 {
-		height: auto !important;
-		padding-bottom: 4px !important;
-	}
-
-	.tutorialContainer__1f388 .numberBadge__2b1f5 {
-		outline: 2px solid var(--bg-base-tertiary);
-		border-radius: 50%;
-	}
-
-	.unreadMentionsIndicatorBottom_ef3116,
-	.unreadMentionsIndicatorTop_ef3116 {
-		width: calc(var(--guildbar-avatar-size) + var(--custom-guild-list-padding) * 2);
-		padding: calc(var(--custom-guild-list-padding) / 2);
-	}
-	
-	.icon_f34534,
-	.folderPreviewGuildIcon__48112,
-	.iconSizeMini_f34534,
-	.iconInactive_f34534
-	{
-		border-radius: 50%;
-	}
-
-	.folderPreviewWrapper__48112
-	{
-		border-radius: 50%;
-	}
-	
-	.container__01ae2,
-	.callContainer_cb9592,
-	.sidebarListRounded_c48ade
-	{
-		border-radius: 0%;
-	}
-}
-
-div[data-align=stretch].stack_dbd263
-{
-	padding-top: 10px;
-}
-
-.container_c8ffbb {
-padding: 0px !important;
-}
-
-/* Fixed this to preserve text visibility */
-.markup_75297 {
-	padding: 2px 0px !important;
-	height: auto !important;
-}
-
-.subtitleContainer_f75fb0
-{
-    height: 40px ;
-}
-
-.tutorialContainer__1f388
-{
-    margin-bottom: 4px;
 }
